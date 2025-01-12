@@ -1,0 +1,102 @@
+/* Apply background image to the whole page */
+body {
+    background-image: url('images/wheather.jpg'); /* Path to your image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center center; /* Position the image at the center */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Make sure the body covers the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Optional: Add styles for text and other elements for readability */
+#weatherApp {
+    color: white; /* Change text color for better contrast */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the app */
+}
+
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#city {
+    padding: 10px;
+    width: 70%;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#city:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.weather-result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-result h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.weather-result p {
+    font-size: 1.2rem;
+    color: #555;
+}
